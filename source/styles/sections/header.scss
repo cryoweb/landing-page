@@ -10,6 +10,11 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 41px 0 32px;
+    
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      padding: 25px 0 25px;
+    }
   }
 }
 
@@ -32,6 +37,11 @@
     margin-right: 8px;
     padding-right: 18px;
     border-right: 1px solid #e2e2e2;
+    
+    @media (max-width: 380px) {
+      padding: 10px 10px 8px 0;
+      border: none;
+    }
   }
   
   &__icon {
@@ -52,4 +62,8 @@
   color: #fff;
   background-color: #1287bf;
   border-radius: 3px;
+  
+  @media (max-width: 380px) {
+    display: none;
+  }
 }

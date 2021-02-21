@@ -5,17 +5,30 @@
   color: #fff;
   background: #ccc url('../images/hero-bg.jpg') center/cover no-repeat;
   
+  @media (max-width: 380px) {
+    min-height: 350px;
+    padding: 70px 0;
+  }
+  
   &__about {
     margin-bottom: 1rem;
     font-family: $ff-main-bold;
     font-size: 3rem;
     line-height: 1;
+    
+    @media (max-width: 380px) {
+      font-size: 2rem;
+    }
   }
   
   &__title {
     margin-top: 0;
     margin-bottom: 27px;
     font-family: $ff-main-light;
+    
+    @media (max-width: 380px) {
+      font-size: 1.5rem;
+    }
   }
   
   .button--upper {
@@ -24,5 +37,10 @@
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 1px;
+    
+    @media (max-width: 380px) {
+      padding: 18px 38px;
+      font-size: 1rem;
+    }
   }
 }
