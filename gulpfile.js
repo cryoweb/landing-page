@@ -41,8 +41,10 @@ gulp.task('styles:compile', function () {
 /* ----- js----- */
 gulp.task('js', function() {
  return gulp.src([
-  'source/js/form.js',
+  'source/js/init.js',
+  'source/js/validation.js',
   'source/js/navigation.js',
+  'source/js/form.js',
   'source/js/main.js'
  ])
  .pipe(sourcemaps.init())
